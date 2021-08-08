@@ -47,6 +47,7 @@ for name, group in groups:
     plt.plot(group['newgazetimestamp'], ['Winkelgeschwindigkeit'], marker="o", label=name)
     print(groups.get_group('Fixation'))
     print(groups.get_group('Sakkade'))
+    
 
 #Deaktiviere Wertbeschriftung an den Axen
 #ax.set_yticklabels([])
