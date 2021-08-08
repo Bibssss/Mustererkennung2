@@ -38,7 +38,8 @@ fig,ax = plt.subplots(1)
 number_column = iris.loc[:,'Winkelgeschwindigkeit']
 numbers = number_column.values
 
-iris[iris('newgazetimestamp'), iris('Winkelgeschwindigkeit')].to_numpy()
+iris.as_matrix(columns=iris.columns[])
+#iris[iris('newgazetimestamp'), iris('Winkelgeschwindigkeit')].to_numpy()
 groups = iris.groupby('Vorhersage')
 
 #Daten plotten
