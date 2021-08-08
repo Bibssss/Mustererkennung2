@@ -34,8 +34,8 @@ fig,ax = plt.subplots(1)
 #ToDo: Definieren der Farbe nach Vorhersagewert
 
 # Dataframe zu Numpy Array
-dataframe = iris.DataFrame({'newgazetimestamp', 'Winkelgeschwindigkeit'})
-number_column = dataframe.loc[:'Winkelgeschwindigkeit']
+#dataframe = iris.DataFrame({'newgazetimestamp', 'Winkelgeschwindigkeit'})
+number_column = iris.loc[:,'Winkelgeschwindigkeit']
 numbers = number_column.values
 
 iris[iris('newgazetimestamp'), iris('Winkelgeschwindigkeit')].to_numpy()
